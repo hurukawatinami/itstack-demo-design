@@ -1,5 +1,10 @@
 package org.itstack.demo.design;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
 public class AuthInfo {
 
     private String code;
@@ -12,19 +17,4 @@ public class AuthInfo {
         }
     }
 
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
-
-    public String getInfo() {
-        return info;
-    }
-
-    public void setInfo(String info) {
-        this.info = info;
-    }
 }

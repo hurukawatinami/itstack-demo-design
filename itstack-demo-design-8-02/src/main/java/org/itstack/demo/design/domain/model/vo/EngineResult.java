@@ -6,6 +6,11 @@ package org.itstack.demo.design.domain.model.vo;
  * 论坛：http://bugstack.cn
  * Create by 付政委 on @2019
  */
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
 public class EngineResult {
 
     private boolean isSuccess; //执行结果
@@ -33,39 +38,4 @@ public class EngineResult {
         return isSuccess;
     }
 
-    public void setSuccess(boolean success) {
-        isSuccess = success;
-    }
-
-    public String getUserId() {
-        return userId;
-    }
-
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
-
-    public Long getTreeId() {
-        return treeId;
-    }
-
-    public void setTreeId(Long treeId) {
-        this.treeId = treeId;
-    }
-
-    public Long getNodeId() {
-        return nodeId;
-    }
-
-    public void setNodeId(Long nodeId) {
-        this.nodeId = nodeId;
-    }
-
-    public String getNodeValue() {
-        return nodeValue;
-    }
-
-    public void setNodeValue(String nodeValue) {
-        this.nodeValue = nodeValue;
-    }
 }

@@ -11,6 +11,11 @@ import java.util.Map;
  * 论坛：http://bugstack.cn
  * Create by 付政委 on @2019
  */
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
 public class TreeRich {
 
     private TreeRoot treeRoot;                          //树根信息
@@ -18,22 +23,6 @@ public class TreeRich {
 
     public TreeRich(TreeRoot treeRoot, Map<Long, TreeNode> treeNodeMap) {
         this.treeRoot = treeRoot;
-        this.treeNodeMap = treeNodeMap;
-    }
-
-    public TreeRoot getTreeRoot() {
-        return treeRoot;
-    }
-
-    public void setTreeRoot(TreeRoot treeRoot) {
-        this.treeRoot = treeRoot;
-    }
-
-    public Map<Long, TreeNode> getTreeNodeMap() {
-        return treeNodeMap;
-    }
-
-    public void setTreeNodeMap(Map<Long, TreeNode> treeNodeMap) {
         this.treeNodeMap = treeNodeMap;
     }
 }

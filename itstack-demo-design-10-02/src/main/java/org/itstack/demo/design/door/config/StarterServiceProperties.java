@@ -1,5 +1,7 @@
 package org.itstack.demo.design.door.config;
 
+import lombok.Setter;
+import lombok.Getter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
@@ -8,17 +10,11 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * 博  客：http://bugstack.cn
  * Create by 小傅哥 on @2020
  */
+@Setter
+@Getter
 @ConfigurationProperties("itstack.door")
 public class StarterServiceProperties {
 
     private String userStr;
-
-    public String getUserStr() {
-        return userStr;
-    }
-
-    public void setUserStr(String userStr) {
-        this.userStr = userStr;
-    }
 
 }

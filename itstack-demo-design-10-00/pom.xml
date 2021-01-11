@@ -78,6 +78,12 @@
             <artifactId>itstack-demo-design-10-02</artifactId>
             <version>2.1.2.RELEASE</version>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+            <version>1.18.8</version>
+        </dependency>
 
     </dependencies>
 

@@ -3,8 +3,9 @@ package org.itstack.demo.design.impl;
 import com.alibaba.fastjson.JSON;
 import org.itstack.demo.design.HttpClient;
 import org.itstack.demo.design.NetMall;
-import sun.misc.BASE64Encoder;
+import java.util.Base64;
 
+import java.util.Base64;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.regex.Matcher;
@@ -38,9 +39,9 @@ public class TaoBaoNetMall extends NetMall {
 
     @Override
     public String createBase64(Map<String, String> goodsInfo) {
-        BASE64Encoder encoder = new BASE64Encoder();
+        final Base64.Encoder encoder = Base64.getEncoder();
         logger.info("模拟生成淘宝商品base64海报");
-        return encoder.encode(JSON.toJSONString(goodsInfo).getBytes());
+        return encoder.encodeToString(JSON.toJSONString(goodsInfo).getBytes());
     }
 
 }

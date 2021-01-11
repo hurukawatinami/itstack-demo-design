@@ -3,6 +3,12 @@ package org.itstack.demo.design.group;
 /**
  * 树节点链路
  */
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
 public class Link {
 
     private String fromId; // 雇员ID
@@ -13,20 +19,4 @@ public class Link {
         this.toId = toId;
     }
 
-    public String getFromId() {
-        return fromId;
-    }
-
-    public void setFromId(String fromId) {
-        this.fromId = fromId;
-    }
-
-    public String getToId() {
-        return toId;
-    }
-
-    public void setToId(String toId) {
-        this.toId = toId;
-    }
-    
 }

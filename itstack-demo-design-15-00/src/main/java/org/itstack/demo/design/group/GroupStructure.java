@@ -23,11 +23,11 @@ public class GroupStructure implements Collection<Employee, Link> {
     }
 
     public boolean add(Employee employee) {
-        return null != employeeMap.put(employee.getuId(), employee);
+        return null != employeeMap.put(employee.getUId(), employee);
     }
 
     public boolean remove(Employee o) {
-        return null != employeeMap.remove(o.getuId());
+        return null != employeeMap.remove(o.getUId());
     }
 
     public boolean addLink(String key, Link link) {

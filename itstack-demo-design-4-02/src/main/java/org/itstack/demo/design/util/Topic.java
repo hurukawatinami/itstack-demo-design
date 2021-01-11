@@ -4,7 +4,11 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
+import lombok.Getter;
+import lombok.Setter;
 
+@Setter
+@Getter
 public class Topic {
 
     private Map<String, String> option;  // 选项；A、B、C、D
@@ -18,19 +22,4 @@ public class Topic {
         this.key = key;
     }
 
-    public Map<String, String> getOption() {
-        return option;
-    }
-
-    public void setOption(Map<String, String> option) {
-        this.option = option;
-    }
-
-    public String getKey() {
-        return key;
-    }
-
-    public void setKey(String key) {
-        this.key = key;
-    }
 }

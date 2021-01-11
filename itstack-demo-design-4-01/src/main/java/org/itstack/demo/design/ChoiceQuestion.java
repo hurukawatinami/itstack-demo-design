@@ -1,12 +1,9 @@
 package org.itstack.demo.design;
 
-import java.util.Map;
-
-/**
- * 单选题
- */
 import lombok.Getter;
 import lombok.Setter;
+
+import java.util.Map;
 
 @Setter
 @Getter

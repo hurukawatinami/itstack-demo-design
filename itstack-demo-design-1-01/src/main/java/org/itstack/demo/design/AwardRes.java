@@ -1,5 +1,9 @@
 package org.itstack.demo.design;
+import lombok.Getter;
+import lombok.Setter;
 
+@Setter
+@Getter
 public class AwardRes {
 
     private String code; // 编码
@@ -7,22 +11,6 @@ public class AwardRes {
 
     public AwardRes(String code, String info) {
         this.code = code;
-        this.info = info;
-    }
-
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
-
-    public String getInfo() {
-        return info;
-    }
-
-    public void setInfo(String info) {
         this.info = info;
     }
 

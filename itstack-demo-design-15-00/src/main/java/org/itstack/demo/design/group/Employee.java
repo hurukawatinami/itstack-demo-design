@@ -1,8 +1,13 @@
 package org.itstack.demo.design.group;
 
+import lombok.Getter;
+import lombok.Setter;
+
 /**
  * 雇员
  */
+@Setter
+@Getter
 public class Employee {
 
     private String uId;   // ID
@@ -17,30 +22,6 @@ public class Employee {
     public Employee(String uId, String name, String desc) {
         this.uId = uId;
         this.name = name;
-        this.desc = desc;
-    }
-
-    public String getuId() {
-        return uId;
-    }
-
-    public void setuId(String uId) {
-        this.uId = uId;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getDesc() {
-        return desc;
-    }
-
-    public void setDesc(String desc) {
         this.desc = desc;
     }
 
